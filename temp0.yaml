@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: temp0
+  namespace: argo
+spec:
+  templates:
+  - name: main
+    container:
+      image: main
+      args: ["argoproj/argosay:v2"]
+  entrypoint: main
