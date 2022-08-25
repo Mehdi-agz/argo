@@ -5,8 +5,8 @@ metadata:
 spec:
   service:
     ports:
-      - port: 2746
-        targetPort: 2746
+      - port: 12000
+        targetPort: 12000
   webhook:
     # event-source can run multiple HTTP servers. Simply define a unique port to start a new HTTP server
     example:
